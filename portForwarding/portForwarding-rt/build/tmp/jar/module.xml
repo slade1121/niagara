@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="portForwarding-rt" bajaVersion="0" vendor="ste" vendorVersion="1.0" description="" preferredSymbol="a" nre="true" autoload="true" installable="true" buildMillis="1649245818341" buildHost="DESKTOP-IR1K51J" moduleName="portForwarding" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.10"/>
+  <dependency name="ndriver-rt" vendor="Tridium" vendorVersion="4.10"/>
+ </dependencies>
+ <dirs/>
+ <types>
+  <type class="com.ste.portForwarding.BPortForwarding" name="PortForwarding"/>
+ </types>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station">
+   <req-permission>
+    <name>NETWORK_COMMUNICATION</name>
+    <purposeKey>PortForwarding</purposeKey>
+    <parameters>
+     <parameter name="hosts" value="*"/>
+     <parameter name="ports" value="*"/>
+     <parameter name="type" value="all"/>
+    </parameters>
+   </req-permission>
+  </niagara-permission-groups>
+ </permissions>
+</module>

@@ -1,0 +1,11 @@
+/*
+ * Copyright 2022 ste, All Rights Reserved.
+ */
+/* Environment Configuration File */
+
+// Change niagara_home and niagara_user_home as needed to point to the
+// correct path to your desired Niagara install and its associated
+// user home
+gradle.ext.niagara_dev_home = "C:/portForwarding"
+gradle.ext.niagara_home = "C:/PhoenixContact/Emalytics1.6/SupervisorN4-4.10.0.154.4"
+gradle.ext.niagara_user_home = "C:/Users/pyxx76/Niagara4.10/PhoenixContact"

@@ -1,0 +1,23 @@
+/* Module Build File */
+
+description     = ""
+ext {
+}
+niagaraModule {
+  moduleName = "portForwarding"
+  preferredSymbol = "a"
+  runtimeProfile = "rt"
+  certAlias = "phoenixCN"
+}
+
+dependencies {
+  compile "Tridium:nre:4.8"
+  compile "Tridium:baja:4.8"
+  compile "Tridium:ndriver-rt:4.8"
+
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}
